@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors())
 app.use(require('./routes/posts'))
 
+
 mongoose.connect(config.dbURL, config.dbOptions)
 
 mongoose.connection
